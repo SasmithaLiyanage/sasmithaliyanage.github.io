@@ -387,7 +387,7 @@
     flex-direction: column;
     transition-duration: 0.6s;
     gap: 25px;
-    height: 65vh;
+    height: 60vh;
     margin-top: -1px;
 
     justify-content: flex-start;
@@ -410,3 +410,4 @@
     width: 90%;
   }
 }
+
