@@ -389,10 +389,16 @@
     gap: 25px;
     height: 65vh;
     margin-top: -1px;
+
+    justify-content: flex-start;
   }
   .down {
     padding-top: 10px;
-    height: 30vh;
+    height: 55vh;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
   }
   .content {
     height: 15vh;
