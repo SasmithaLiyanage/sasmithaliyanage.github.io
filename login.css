@@ -14,8 +14,12 @@
   background-position: center;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
+
+  transition: scale(1.5);
+  transition: all 0.4s ease-in-out;
 }
 
 .container {
@@ -28,34 +32,39 @@
   -webkit-backdrop-filter: blur(5px);
 
   display: flex;
+
   gap: 10px;
+
+  overflow: hidden;
+  transition: scale(1.5);
+  transition: all 0.4s ease-in-out;
 }
 
 .image {
   border-radius: 10px 0px 0px 10px;
   width: 40%;
   height: 40vh;
+
   background-color: azure;
   background-image: url("boxes-1762082105423.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center ;
+  background-position: center;
 }
-p{
-    text-align: center;
+p {
+  text-align: center;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-    font-size: 25px;
-    font-family: "Courier New", Courier, monospace;
-    
-    color: azure;
-    width: 100%;
-    height: 40px;
+  color: azure;
+  width: 100%;
+  height: 40px;
 }
 
 .detail {
@@ -69,7 +78,6 @@ p{
   align-items: center;
 }
 .form-input {
-    
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   position: relative;
@@ -78,7 +86,6 @@ p{
 }
 
 .form-input input {
-
   width: 100%;
   height: 50px;
   background-color: transparent;
@@ -88,62 +95,98 @@ p{
 
   padding: 20px 30px 20px 20px;
   color: azure;
+  font-weight: bold;
+
+  text-decoration: "*";
 }
 
-.form-input input::placeholder{
-    color: azure;
+.form-input input::placeholder {
+  color: azure;
 }
 
 .form-input i {
-    color: azure;
-    position: absolute;
+  color: azure;
+  position: absolute;
 
-    top: 16px;
-    right: 10px;
+  top: 16px;
+  right: 10px;
 
-    transform: translate(-50%);
+  transform: translate(-50%);
 }
-form{
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.botton {
+  width: 90%;
+  height: 35px;
+  background-color: azure;
+
+  color: #0b2239;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.botton:hover {
+  background-color: rgb(188, 219, 219);
+}
+
+.demo {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.demo a {
+  color: aliceblue;
+  text-decoration: underline;
+}
+.demo a:hover {
+  color: rgba(240, 248, 255, 0.637);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    justify-content: flex-start;
     align-items: center;
-}
-.botton{
-    
-    width: 90%;
-    height: 35px;
-    background-color: azure;
 
-    color: #0b2239;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 60%;
+    height: 60vh;
 
-    font-size: 15px;
-
-    transition: all .4s ease-in-out
-}
-
-.botton:hover{
-    background-color: rgb(188, 219, 219);
-}
-
-.demo{
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
+    gap: 20px;
+  }
+  .image {
     width: 100%;
+    height: 20vh;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-input input {
+    width: 100%;
+  }
+  .detail {
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
 
-    font-size: 13px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.demo a{
-    color: aliceblue;
-    text-decoration: underline;
-}
-.demo a:hover{
-    color: rgba(240, 248, 255, 0.637);
+  .demo {
+    padding-top: 10px;
+  }
 }
